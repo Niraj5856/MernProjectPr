@@ -13,7 +13,12 @@ const TodoSchema = new mongoose.Schema({
     phone: {
         type: Number,
         trim: true
+    },
+    address:{
+        type:String ,
+        trim:true
     }
+    ,
     
 },
     { timestamps: true }
