@@ -8,7 +8,7 @@ exports.createTodo = async (req, res) => {
         return res.status(201).json({
             success:true ,
             data:response ,
-            message:"sucessfully created todo"
+            message:" created todo"
         })
 
     } catch (error) {
