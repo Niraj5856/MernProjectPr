@@ -6,7 +6,7 @@ const Db=()=>{
         console.log("Db connected successfully")
     })
     .catch((error)=>{
-        console.log("DB not connected",error);
+        console.log("DB not connected",error)
     })
 }
 
