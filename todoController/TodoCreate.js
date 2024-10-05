@@ -26,8 +26,8 @@ exports.getAllTodo = async (req, res) => {
         console.log("addTodo", dataResponse)
         return res.status(201).json({
             success: true,
-            data: dataResponse,
-            message: "all Todos"
+            data: dataResponse, 
+            message: "all Todos(addButtom)"
         })
 
 
@@ -40,4 +40,13 @@ exports.getAllTodo = async (req, res) => {
 
     }
 
+}
+
+
+exports.findById=async(req ,res)=>{
+    try{
+
+    }catch(error){
+
+    }
 }
