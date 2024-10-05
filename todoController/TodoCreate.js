@@ -19,3 +19,25 @@ exports.createTodo = async (req, res) => {
 
     }
 }
+
+exports.getAllTodo = async (req, res) => {
+    try {
+        const dataResponse = await TodoModel.find({})
+        console.log("addTodo", dataResponse)
+        return res.status(201).json({
+            success: true,
+            data: dataResponse,
+            message: "all Todos"
+        })
+
+
+
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: error.message
+        })
+
+    }
+
+}
