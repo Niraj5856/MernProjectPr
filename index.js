@@ -3,6 +3,7 @@ const app=express();
 const cors=require("cors");
 const dotenv=require("dotenv").config()
 const DB=require("../Mern-server/config/dataBase")
+const route=require("./routes/todoRoutes")
 
 
 
@@ -16,6 +17,9 @@ app.use(express.json());
 
 //dataBAse connection here 
 DB()
+
+//route moute here 
+app.use("/user" ,route);
 
 //route mount here 
 
